@@ -1,0 +1,72 @@
+
+
+#pav {
+    background-color: rgb(228, 200, 166);
+    height: 20px;
+    font-size: 30px;
+    font-family:"Brush Script MT";
+}
+
+
+
+
+
+
+
+
+#kontaktaizemiau {
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(248, 231, 210);
+    height: 100px;
+    flex: 1;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+#kontaktai {
+    font-size: 50px;
+    margin-bottom: 25px;
+    color:rgb(164, 133, 93);
+    font-family: "Pacifico Regular";
+}
+
+#vieta {
+    display:flex;
+    justify-content: start;
+    gap:6px;
+    margin-bottom: 15px;
+}
+
+#link {
+    color:rgb(196 166 130);
+    font-size: 25px;
+}
+
+
+
+.tekstas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    padding-bottom: 200px;
+    margin-top: auto;
+}
+
+.puod {
+    height: 750px;
+    max-height: 100%;
+}
+
+#tel {
+    margin-bottom: 15px;
+}
+
+#pastas {
+    margin-bottom: 15px;
+}
+
