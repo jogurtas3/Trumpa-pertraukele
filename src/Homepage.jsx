@@ -6,6 +6,7 @@ import './Homepage.css'
 
 function Homepage (){
     const navigate=useNavigate()
+
     return (
     <>
         <div id="homepagezemiau">
