@@ -45,7 +45,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: auto;
-    padding-bottom: 200px;
     margin-top: auto;
 }
 
@@ -62,3 +61,10 @@
     margin-bottom: 15px;
 }
 
+.mapboxgl-ctrl-attrib{
+    /* display: none; */
+}
+
+.markeris {
+    height: 50px;
+}

@@ -36,13 +36,12 @@ kategorijos.forEach(function(kategorija){
     })
 })
 
-let skaiciai = [1, 2, 3]
-let dvigubiSkaiciai = skaiciai.map(function(skaicius) {
-    console.log(skaicius)
-    return skaicius * 2
-})
+// let dvigubiSkaiciai = skaiciai.map(function(skaicius) {
+//     console.log(skaicius)
+//     return skaicius * 2
+// })
 
-console.log("CIAAAA", dvigubiSkaiciai)
+// console.log("CIAAAA", dvigubiSkaiciai)
 
 
 
@@ -86,3 +85,19 @@ console.log("CIAAAA", dvigubiSkaiciai)
 // if (tekstas == "labas") {
 //     console.log('vienodi')
 // }
+
+let skaiciai = [5, 10, 20]
+skaiciai.forEach(function(skaic){
+    console.log(skaic)
+})
+
+let dvigubiSkaiciai = skaiciai.map(function(skaic){
+    skaic=skaic*2
+    return skaic
+})
+
+console.log(dvigubiSkaiciai)
+
+skaiciai.reduce(function(currentSum, skaicius) {
+    return currentSum + skaicius
+}, 0)
