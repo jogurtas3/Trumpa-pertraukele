@@ -15,10 +15,12 @@ function Meniu (){
                             pakeisti(null);
                         }}>&times;</div>
                         <img className="patPav"
-                            src="https://tea.gr/wp-content/uploads/2023/03/39114.jpg"
+                            src={dabartinis.pav}
                             alt="new"
                         />
-                        <p>dabartinis patiekalas yra {dabartinis}</p>
+                        <p>{dabartinis.pavadinimas}</p>
+                        <p>{dabartinis.kainaEUR} €</p>
+                        <p>{dabartinis.aprasymas}</p>
                     </div>
                 </div>
             }
@@ -32,7 +34,7 @@ function Meniu (){
                             return (
                                 <>
                                     <div className="eilute"onClick={function() {
-                                        pakeisti(patiekalas.pavadinimas)
+                                        pakeisti(patiekalas)
                                           }}>
                                        <div className="pasirinkimas">{patiekalas.pavadinimas}</div>
                                        <div className="taskai"></div>
