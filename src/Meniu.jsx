@@ -16,7 +16,7 @@ function Meniu (){
                         <div className="close" onClick={function() {
                             pakeistiKrepsMyg(false);
                         }}>&times;</div>
-                        <h3 id="krepselioHead">Tavo krepšelis</h3>
+                        <h3 id="krepselioHead">Jūsų krepšelis</h3>
                         {dabartinisKreps.map(function(krepsioPat){
                             return (
                                 <div className="krepselioEilute">
@@ -26,7 +26,7 @@ function Meniu (){
                                     />
                                     <div className="krepselioPat">
                                         <div className='krepselioPatPavadinimas'>{krepsioPat.pavadinimas}</div>
-                                        <div className='krepselioPatAprasymas'>{krepsioPat.aprasymas}</div>
+                                        {/* <div className='krepselioPatAprasymas'>{krepsioPat.aprasymas}</div> */}
                                         <div className='krepselioPatKaina'>{krepsioPat.kainaEUR} €</div>
                                     </div>
                                 </div>
@@ -37,14 +37,14 @@ function Meniu (){
                             pakeistiKreps([]);
                         }}>
                             <div style={{display:"flex"}}>
-                                <div style={{marginInline: "0px 10px"}}>{dabartinisKreps.length}</div>
-                                <div style={{display:"flex", flex: "auto", justifyContent: "space-between"}}>
+                                <div className='krepselioKiekis'>{dabartinisKreps.length}</div>
+                                <div style={{display:"flex", flex: "auto", justifyContent: "space-between", alignItems: "center"}}>
                                     <div>Užsakyti</div>
                                     <div>{
                                         dabartinisKreps.reduce(function(dabartineSuma, patiekalas) {
                                             return dabartineSuma + patiekalas.kainaEUR
                                         }, 0)
-                                    }</div>
+                                    } &nbsp; €</div>
                                 </div>
                             </div>
                         </button>
@@ -61,10 +61,10 @@ function Meniu (){
                             src={dabartinis.pav}
                             alt="new"
                         />
-                        <p>{dabartinis.pavadinimas}</p>
-                        <p>{dabartinis.kainaEUR} €</p>
-                        <p>{dabartinis.aprasymas}</p>
-                        <button onClick={function() {
+                        <p className='dabartinisPavadinimas'>{dabartinis.pavadinimas}</p>
+                        <p className='dabartinisKainaEUR'>{dabartinis.kainaEUR} €</p>
+                        <p className='dabartinisAprasymas'>{dabartinis.aprasymas}</p>
+                        <button className='detiIKreps' onClick={function() {
                             pakeisti(null);
                             let naujasSarasas = dabartinisKreps.concat(dabartinis);
                             pakeistiKreps(naujasSarasas)

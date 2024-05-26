@@ -124,7 +124,7 @@
     border-radius: 25px;
     overflow: hidden;
     position: relative;
-    background-color: #fefefe;
+    background-color: rgb(255, 249, 241);
     margin: auto;
     border: 1px solid #888;
     width: 510px;
@@ -161,11 +161,30 @@
 }
 
 #krepselioMyg {
-    width: 80px;
+    width: 100px;
+    height: 40px;
     position: absolute;
     right: 20px;
     bottom: 20px;
+
+    border: 2px solid rgb(164, 133, 93);
+    background: rgb(228, 200, 166);
+    font-family: "Georgia";
+    font-size: 17px;
+    border-radius: 10px;
+    color: rgb(116, 88, 51);
 }
+
+#krepselioMyg:hover {
+    transition: 0.2s;
+    color: rgb(76, 33, 33);
+    border: 2px solid rgb(92, 70, 41);
+}
+  
+#krepselioMyg:active {
+    opacity: 0.1;
+}
+
 
 #meniuSarasai {
     display: flex;
@@ -185,7 +204,7 @@
 }
 
 .krepselis-content {
-    background-color: #fefefe;
+    background-color: rgb(248, 231, 210);
     position: absolute;
     right: 0px;
     width: 510px;
@@ -197,22 +216,125 @@
     margin: 10px;
     bottom: 0px;
     width: calc(100% - 20px);
+    height: 3rem;
+
+    border: 2px solid rgb(164, 133, 93);
+    background: rgb(228, 200, 166);
+    font-family: "Monaco";
+    font-size: 19px;
+    border-radius: 10px;
+    color: rgb(116, 88, 51);
+}
+
+#uzsakyti:hover {
+    transition: 0.2s;
+    color: rgb(76, 58, 33);
+    border: 2px solid rgb(92, 70, 41);
+}
+  
+#uzsakyti:active {
+    opacity: 0.1;
 }
 
 .krepselioPav {
     width: 71px;
     height: 40px;
     object-fit: cover;
+    margin-left: 16px;
+    border: 1.5px solid rgb(116, 88, 51);
 }
 
 .krepselioEilute {
     display: flex;
 }
 
+#krepselioHead {
+    margin-left: 16px;
+    margin-top: 60px;
+    font-size: 2.1rem;
+    color: rgb(71 40 0);
+    font-family: "Georgia, serif";
+}
+
 .krepselioPatPavadinimas {
     font-weight: bold;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
+
+
+.krepselioPatKaina {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: rgb(143 105 0);
+}
+
 
 .krepselioPat {
     width: 410px;
+    margin-bottom: 20px;
 }
+
+.dabartinisPavadinimas {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dabartinisKainaEUR {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.dabartinisAprasymas {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.detiIKreps {
+    float: right;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-top: 0px;
+    
+    border: 2px solid rgb(164, 133, 93);
+    background: rgb(228, 200, 166);
+    font-family: "Georgia";
+    font-size: 17px;
+    border-radius: 10px;
+    color: rgb(116, 88, 51);
+}
+
+.detiIKreps:hover {
+    transition: 0.2s;
+    color: rgb(76, 58, 33);
+    border: 2px solid rgb(92, 70, 41);
+  }
+  
+  .detiIKreps:active {
+    opacity: 0.1;
+  }
+
+  .krepselioKiekis {
+    margin: 0px 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(249, 238, 224);
+    color: #161616;
+    float: right;
+    font-size: 19px;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border-radius: 50%;
+    background-color: #888; */
+  }

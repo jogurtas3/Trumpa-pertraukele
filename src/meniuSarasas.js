@@ -9,8 +9,8 @@ let kategorijos = [
         "ikona": arbata,
         "patiekalai": [
             { 
-                "pavadinimas": "juodoji",
-                "aprasymas": "Rinkitės iš Irish Cream, Earl Grey ir Golden Snail, papildomai medus ir/ar pienas.",
+                "pavadinimas": "Irish Cream",
+                "aprasymas": "Subtilaus airiško grietinėlės likerio aromato juodoji arbata. Irish Cream arbata pasižymi savo sodriu ir stipriu skoniu, labai silpnai salstelėjusi. Tai geras pasirinkimas kaip nealkoholinis gėrimas vietoje saldaus likerio po vakarienės, puikus vakaro gėrimas. Ši aromatinė arbata puikiai tinka gerti be priedų, bet pridėjus pieno atsiskleidžia kreminis arbatos skonis.",
                 "kainaEUR": 3.99,
                 "pav": "https://tea.gr/wp-content/uploads/2023/03/39114.jpg"
             },
